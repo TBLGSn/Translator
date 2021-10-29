@@ -33,8 +33,4 @@ void Translator::request(const char *url) {
     }
 }
 
-void Translator::parse(string &t) {
-    size_t end = t.rfind("\"");
-    size_t begin = t.rfind("\"" , end - 1);
-    res = t.substr(begin + 1, end - 1 - begin);
-}
+

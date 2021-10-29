@@ -13,7 +13,12 @@ void Youdao_translator::request(const string sentence){
     url += sentence;
     Translator::request(url.c_str()); 
 };
-
+void Youdao_translator::parse(string &t) {
+    size_t end = t.rfind("\"");
+    size_t begin = t.rfind("\"" , end - 1);
+    res = t.substr(begin + 1, end -1 -begin);
+    //return t.substr(begin + 1, end - 1 - begin);
+}
 Youdao_translator::~Youdao_translator()
 { 
 }
