@@ -39,9 +39,8 @@ class Translator {
          * @param {string} &s
          * @return {*}
          */        
-        virtual void parse(string &s) = 0;
+        virtual string parse(string &s) = 0;
         CURL* handle; 
-    protected:
         string res;
 };
 #endif // _TRANSLATOR_SRC_TRANSLATOR_H_

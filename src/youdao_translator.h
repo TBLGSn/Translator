@@ -13,7 +13,7 @@ class Youdao_translator : public Translator
 private:
     //接口API，需要在最后加上真正的"查询的语句"
     string url = "http://fanyi.youdao.com/translate?&doctype=json&type=AUTO&i=";
-    virtual void parse(string &s);
+    virtual string parse(string &s);
 public:
     void set_url(string& s){
         url = s;

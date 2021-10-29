@@ -2,7 +2,7 @@
  * @Author: tblgsn
  * @Date: 2021-10-27 10:46:38
  * @Description: 翻译接口
- * @FilePath: /translator/src/translator.cpp
+ * @FilePath: /Translator/src/translator.cpp
  */
 
 #include <string>
@@ -29,7 +29,7 @@ void Translator::request(const char *url) {
         return;
     } else {
         string t = out.str();
-        parse(t);
+        res = parse(t);
     }
 }
 
